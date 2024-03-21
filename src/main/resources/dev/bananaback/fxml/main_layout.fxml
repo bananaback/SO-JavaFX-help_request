@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="dev.bananaback.controllers.MainLayoutController"
+            fx:id="mainLayoutBorderPane">
+
+    <!-- Navigation Bar -->
+    <VBox id="navBar" BorderPane.alignment="TOP_LEFT">
+        <fx:include source="nav_bar.fxml" />
+    </VBox>
+
+    <!-- Main Content -->
+    <VBox id="mainContent" BorderPane.alignment="BOTTOM_LEFT">
+        <fx:include source="main_content.fxml" />
+    </VBox>
+    
+</BorderPane>
